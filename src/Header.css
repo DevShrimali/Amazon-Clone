@@ -1,0 +1,8 @@
+.header {
+    background-color: rgb(253, 215, 215);
+}
+.header__logo{
+    width: 100px;
+    margin: 0 20px;
+    margin-top: 18px;
+}
