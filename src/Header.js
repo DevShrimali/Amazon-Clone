@@ -7,16 +7,20 @@ import SearchIcon from '@material-ui/icons/Search';
 function Header() {
     return (
         <nav className="header">
-        <Link to="/login">
-            <img className="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt=""/>
-        </Link>
-            {/* logo on the left */}
-        <div className="header__search">
-            <input type="text" className="header__serachInput"/>   
-            <SearchIcon className="header__searchIcon"/>
-        </div>
-            {/* Search */}
-            {/* 3 links */}
+         {/* logo on the left */}
+            <Link to="/">
+                <img className="header__logo" src="https://jitsvinger.co.za/wp-content/uploads/2018/04/Amazon-Logo-1024x373.png" alt=""/>
+            </Link>
+         {/* Search */}
+           <div className="header__search">
+                <input type="text" className="header__serachInput"/>   
+                <SearchIcon className="header__searchIcon"/>
+            </div>
+
+         {/* 3 links */}
+            <div className="header__nav">
+
+            </div>
             {/* Basket icon with number */}
        </nav>
     )
