@@ -1,8 +1,16 @@
 .header {
-    background-color: rgb(253, 215, 215);
+    background-color: rgb(144, 229, 255);
+    display: flex;
+    align-items: center;
 }
 .header__logo{
     width: 100px;
     margin: 0 20px;
     margin-top: 18px;
+}
+.header__search{
+    display: flex;
+}
+.header__searchIcon {
+    background-color:#cd9042 ;
 }
