@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStateValue } from './StateProvider';
+import CheckoutProduct from './CheckoutProduct';
 import "./Checkout.css";
 
 function Checkout() {
@@ -18,7 +19,20 @@ function Checkout() {
                 </div>
             ) : (
                 <div>
-                    <h2>Your Amazon Cart.</h2>
+                    <h2 className="checkout__title">Your Amazon Cart.</h2>
+                    {/* List out all of the Checkout Products */}
+                    {basket.map( item=> (
+                        <CheckoutProduct
+                            item={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            rating={item.rating}
+
+                        />
+                    ))}
+                    
+
                 </div>
             )}
     </div>;

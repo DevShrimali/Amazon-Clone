@@ -1,6 +1,12 @@
 //data layer logic
 export const initialState={
-    basket: [],
+    basket: [{
+                id:"01114",
+                title:"SanDisk Cruzer Blade 32GB USB Flash Drive",
+                price:599.00,
+                rating:4,
+                image:"https://images-na.ssl-images-amazon.com/images/I/61pHXsALAOL._SY355_.jpg"
+    }],
     user: null,
 };
 
