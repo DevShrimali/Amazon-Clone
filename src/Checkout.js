@@ -8,6 +8,7 @@ function Checkout() {
     const [{ basket } ] = useStateValue();
 
     return <div className="checkout">
+            <div className= "checkout__left">
             <img className="checkout__ad" 
             src="https://images-na.ssl-images-amazon.com/images/G/01/credit/img16/CCMP/newstorefront/YACC-desktop-nonprime-banner3.png" 
             alt=""/>
@@ -21,22 +22,17 @@ function Checkout() {
                 <div>
                     <h2 className="checkout__title">Your Amazon Cart.</h2>
                     {/* List out all of the Checkout Products */}
-                    {basket.map( item=> (
-                        <CheckoutProduct
-                            item={item.id}
+                    {basket?.map((item) => (
+                     <CheckoutProduct
+                            id={item.id}
                             title={item.title}
                             image={item.image}
                             price={item.price}
-                            rating={item.rating}
-
-                        />
-                    ))}
-                    
-
+                            rating={item.rating}/>))}
                 </div>
             )}
+            </div>
     </div>;
     
 }
-
 export default Checkout;
